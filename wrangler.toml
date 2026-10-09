@@ -4,6 +4,6 @@ pages_build_output_dir = "."
 
 [[d1_databases]]
 binding = "LAUNCHPAD_DB"
-database_name = "launchpad-opportunities"
+database_name = "studentfund-india-database"
 database_id = "296950a4-6772-425a-b960-057275e3b32d"
 migrations_dir = "migrations"
