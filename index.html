@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7f2" />
+  <meta name="description" content="Find student schemes, scholarships, grants, incubators and innovation programs in one place." />
+  <title>Launchpad — opportunities for students</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Launchpad home"><span class="brand-mark">↗</span> launchpad<span class="brand-dot">.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#opportunities">Explore</a><a href="#how-it-works">How it works</a><a href="#about">About</a>
+    </nav>
+    <a class="nav-cta" href="#opportunities">Find your next step <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT OPPORTUNITY STARTS HERE</div>
+        <h1>Big ideas.<br /><em>Real support.</em></h1>
+        <p class="hero-intro">A clearer way for students to find the schemes, funding and programs that help them move forward.</p>
+        <a class="button button-dark" href="#opportunities">Explore opportunities <span>↘</span></a>
+        <div class="hero-proof"><div class="avatar-stack"><span>R</span><span>A</span><span>M</span><span>+</span></div><span>For students with plans<br />big and small.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of students turning an idea into a project">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="sun"></div><div class="art-label label-top">IDEA → IMPACT</div>
+        <div class="paper paper-back"><span>YOUR<br />NEXT<br />CHAPTER</span><i>✳</i></div>
+        <div class="paper paper-front"><div class="paper-top"><b>THE STUDENT<br />PLAYBOOK</b><span>01 / 04</span></div><div class="paper-doodle">✳</div><div class="paper-bottom">MAKE SOMETHING<br /><strong>HAPPEN.</strong></div></div>
+        <div class="spark spark-one">✳</div><div class="spark spark-two">✴</div>
+        <div class="floating-note"><span class="note-icon">↗</span><span><b>One good opportunity</b><small>can change everything.</small></span></div>
+      </div>
+      <div class="hero-bottom"><span>OPPORTUNITY, WITHOUT THE GUESSWORK</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="explore section-wrap" id="opportunities">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> THE OPPORTUNITY BOARD</div><h2>Find the thing<br />that <em>moves you.</em></h2></div><p>From making tuition more manageable to taking your first startup idea further, find support that fits where you are right now.</p></div>
+      <div class="category-tabs" role="tablist" aria-label="Opportunity type">
+        <button class="category-tab selected" data-category="all" role="tab" aria-selected="true">Everything <span>08</span></button>
+        <button class="category-tab" data-category="funding" role="tab" aria-selected="false">Funding & grants</button>
+        <button class="category-tab" data-category="startup" role="tab" aria-selected="false">Build a startup</button>
+        <button class="category-tab" data-category="innovation" role="tab" aria-selected="false">Innovation programs</button>
+        <button class="category-tab" data-category="student" role="tab" aria-selected="false">Student schemes</button>
+      </div>
+      <div class="finder-bar">
+        <label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Try ‘prototype grant’ or ‘final year’" aria-label="Search opportunities" /><kbd>⌘ K</kbd></label>
+        <label class="filter-select"><span class="sr-only">Filter by level</span><select id="level-filter"><option value="all">All study levels</option><option value="undergraduate">Undergraduate</option><option value="postgraduate">Postgraduate</option><option value="any">Any student</option></select></label>
+        <label class="filter-select location-select"><span class="sr-only">Filter by location</span><select id="location-filter"><option value="all">All locations</option><option value="india">India</option><option value="global">Global / online</option></select></label>
+      </div>
+      <div class="results-meta"><span id="results-count">Showing 8 opportunities</span><button id="saved-filter" class="saved-filter">♡ Saved <span id="saved-count">0</span></button></div>
+      <div class="cards-grid" id="cards-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>◌</span><h3>No matches yet</h3><p>Try another search or clear a filter to see more opportunities.</p><button class="button button-outline" id="clear-filters">Clear filters</button></div>
+      <p class="data-note">Opportunity details are sample listings for this demo. Always confirm eligibility, deadlines and application details with the official provider.</p>
+    </section>
+
+    <section class="steps-section" id="how-it-works"><div class="section-wrap steps-inner"><div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> A LITTLE LESS OVERWHELMED</div><h2>From “where do I start?”<br />to <em>“look what I did.”</em></h2><div class="steps-grid"><article><span class="step-no">01</span><h3>Tell us what you're after</h3><p>Search by goal, study level or the kind of support you need.</p></article><article><span class="step-no">02</span><h3>Find your fit</h3><p>Compare opportunities and save the ones worth a closer look.</p></article><article><span class="step-no">03</span><h3>Take the next step</h3><p>Head to the provider and turn a promising lead into a plan.</p></article></div><a class="button button-light" href="#opportunities">Start exploring <span>↗</span></a></div></section>
+
+    <section class="closing section-wrap" id="about"><div class="closing-star">✳</div><div><div class="eyebrow"><span class="eyebrow-dot"></span> MADE FOR WHAT'S NEXT</div><h2>Your idea deserves<br />a <em>real shot.</em></h2></div><div class="closing-copy"><p>Launchpad brings student benefits and entrepreneurship opportunities into one place, so you can spend less time hunting and more time building your future.</p><a href="#opportunities" class="text-link">Find your opportunity <span>↗</span></a></div></section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">↗</span> launchpad<span class="brand-dot">.</span></a><span>Made for students making moves.</span><a href="/admin">Admin</a><span>© <span id="year"></span> Launchpad</span></footer>
+
+  <dialog id="opportunity-dialog" class="detail-dialog"><button class="dialog-close" aria-label="Close details">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
